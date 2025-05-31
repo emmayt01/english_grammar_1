@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive English Grammar | 互動英語文法</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>English Grammar Essentials | 英語文法精要</h1>
+    </header>
+    <nav class="tab-nav">
+        <button class="tab-link active" onclick="openTab(event, 'perfect-tense')">Perfect Tense | 完成式</button>
+        <button class="tab-link" onclick="openTab(event, 'progressive-tense')">Progressive Tense | 進行式</button>
+        <button class="tab-link" onclick="openTab(event, 'past-participle')">Past Participle | 過去分詞</button>
+        <button class="tab-link" onclick="openTab(event, 'participle-clauses')">Participle Clauses | 分詞構句</button>
+    </nav>
+
+    <main>
+        <section id="perfect-tense" class="tab-content" style="display:block;">
+            <h2>Perfect Tense | 完成式</h2>
+            <p>The perfect tenses are used to talk about actions that are completed by the present or a particular point in the past or future. They are formed using the auxiliary verb "have" (in its various forms) followed by the past participle of the main verb.<br>完成式用於談論在現在、過去某特定時間點或未來某特定時間點之前已經完成的動作。它們由助動詞 "have" (各種形式) 加上主要動詞的過去分詞構成。</p>
+
+            <h3>Present Perfect | 現在完成式</h3>
+            <p><strong>Form:</strong> has/have + past participle<br><strong>結構：</strong> has/have + 過去分詞</p>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>Actions that happened at an unspecified time before now. The exact time is not important.<br>在過去不確定的時間發生的動作，確切時間不重要。</li>
+                <li>Actions that started in the past and continue to the present.<br>從過去開始並持續到現在的動作。</li>
+                <li>Actions that were completed recently (often with "just").<br>最近完成的動作 (常與 "just" 連用)。</li>
+                <li>Life experiences.<br>生活經驗。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Science (科學):</strong> Scientists <strong>have discovered</strong> a new species of insect in the Amazon rainforest.<br>科學家在亞馬遜雨林中<strong>發現了</strong>一個新的昆蟲物種。</p>
+                <p><strong>Technology (科技):</strong> I <strong>have used</strong> this software for three years.<br>這個軟體我<strong>已經使用</strong>三年了。</p>
+                <p><strong>Daily Life (日常生活):</strong> She <strong>has just finished</strong> her coffee.<br>她<strong>剛喝完</strong>她的咖啡。</p>
+                <p><strong>Travel (旅行):</strong> We <strong>have visited</strong> Paris several times.<br>我們<strong>去過</strong>巴黎好幾次了。</p>
+            </div>
+
+            <h3>Past Perfect | 過去完成式</h3>
+            <p><strong>Form:</strong> had + past participle<br><strong>結構：</strong> had + 過去分詞</p>
+            <p><strong>Use:</strong> To describe an action that was completed before another action or specific time in the past.<br><strong>用途：</strong>描述在過去另一個動作或特定時間點之前已經完成的動作。</p>
+            <div class="example">
+                <p><strong>History (歷史):</strong> By the time the reinforcements arrived, the main battalion <strong>had already retreated</strong>.<br>當援軍到達時，主力部隊<strong>已經撤退了</strong>。</p>
+                <p><strong>Literature (文學):</strong> He realized he <strong>had left</strong> his keys inside only after he locked the door.<br>他鎖上門後才意識到他把鑰匙<strong>忘在</strong>裡面了。</p>
+                <p><strong>Business (商業):</strong> The company <strong>had secured</strong> the patent long before its competitors even knew about the invention.<br>該公司早在其競爭對手知道這項發明之前就<strong>已經取得了</strong>專利。</p>
+            </div>
+
+            <h3>Future Perfect | 未來完成式</h3>
+            <p><strong>Form:</strong> will have + past participle<br><strong>結構：</strong> will have + 過去分詞</p>
+            <p><strong>Use:</strong> To describe an action that will be completed before a specific time or another action in the future.<br><strong>用途：</strong>描述在未來某特定時間點或另一個動作之前將會完成的動作。</p>
+            <div class="example">
+                <p><strong>Space Exploration (太空探索):</strong> By 2035, humans <strong>will have established</strong> a permanent base on the Moon.<br>到2035年，人類將<strong>已經在</strong>月球上<strong>建立了</strong>永久基地。</p>
+                <p><strong>Career (職涯):</strong> She <strong>will have graduated</strong> from university by next June.<br>到明年六月，她將<strong>已經</strong>大學<strong>畢業了</strong>。</p>
+                <p><strong>Project Management (專案管理):</strong> We <strong>will have completed</strong> all phases of the project before the deadline.<br>在截止日期前，我們將<strong>已經完成</strong>專案的所有階段。</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Test Your Knowledge: Perfect Tense | 測試你的知識：完成式</h3>
+                <div class="question">
+                    <p>1. By the time I arrived, the movie ______ (start).<br>當我到達時，電影 ______ (開始)。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1_perfect" value="incorrect"> starts (開始 - 現在式)</label>
+                        <label><input type="radio" name="q1_perfect" value="correct"> had started (已經開始了 - 過去完成式)</label>
+                        <label><input type="radio" name="q1_perfect" value="incorrect"> will have started (將已經開始 - 未來完成式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>2. I ______ (visit) this coffee shop many times. It's my favorite.<br>我 ______ (參觀) 這家咖啡店很多次了。它是我的最愛。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2_perfect" value="correct"> have visited (參觀過 - 現在完成式)</label>
+                        <label><input type="radio" name="q2_perfect" value="incorrect"> had visited (曾參觀過 - 過去完成式)</label>
+                        <label><input type="radio" name="q2_perfect" value="incorrect"> will visit (將參觀 - 未來式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>3. By next year, they ______ (build) the new bridge.<br>到明年，他們 ______ (建造) 新的橋樑。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3_perfect" value="incorrect"> have built (已經建造 - 現在完成式)</label>
+                        <label><input type="radio" name="q3_perfect" value="incorrect"> had built (曾建造 - 過去完成式)</label>
+                        <label><input type="radio" name="q3_perfect" value="correct"> will have built (將已經建造 - 未來完成式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <button class="submit-quiz-btn">Check Answers | 檢查答案</button>
+            </div>
+        </section>
+
+        <section id="progressive-tense" class="tab-content">
+            <h2>Progressive (Continuous) Tense | 進行式</h2>
+            <p>The progressive tenses describe actions or states that are ongoing or in progress at a certain point in time (present, past, or future). They emphasize the duration or continuity of the action. They are formed using the verb "to be" (in its various forms) + the present participle (verb-ing).<br>進行式描述在特定時間點 (現在、過去或未來) 正在進行或持續中的動作或狀態。它們強調動作的持續性。由動詞 "to be" (各種形式) + 現在分詞 (verb-ing) 構成。</p>
+
+            <h3>Present Progressive | 現在進行式</h3>
+            <p><strong>Form:</strong> am/is/are + verb-ing<br><strong>結構：</strong> am/is/are + 現在分詞</p>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>Actions happening right now.<br>當下正在發生的動作。</li>
+                <li>Temporary actions or situations.<br>暫時性的動作或情況。</li>
+                <li>Annoying habits (often with "always" or "constantly").<br>惱人的習慣 (常與 "always" 或 "constantly" 連用)。</li>
+                <li>Future plans or arrangements.<br>未來的計畫或安排。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Fashion (時尚):</strong> The models <strong>are currently walking</strong> down the runway showcasing the new collection.<br>模特兒們目前正<strong>在走秀</strong>，展示新的服裝系列。</p>
+                <p><strong>Technology (科技):</strong> My computer <strong>is running</strong> a bit slow today.<br>我的電腦今天<strong>跑得</strong>有點慢。</p>
+                <p><strong>Social Interaction (社交互動):</strong> He <strong>is always interrupting</strong> me when I speak!<br>他說話時<strong>總是打斷</strong>我！</p>
+                <p><strong>Events (活動):</strong> We <strong>are meeting</strong> our clients for a coffee later this afternoon.<br>我們今天下午晚些時候要和客戶<strong>喝咖啡開會</strong>。</p>
+            </div>
+
+            <h3>Past Progressive | 過去進行式</h3>
+            <p><strong>Form:</strong> was/were + verb-ing<br><strong>結構：</strong> was/were + 現在分詞</p>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>An action that was in progress at a specific time in the past.<br>在過去特定時間點正在進行的動作。</li>
+                <li>An action in progress that was interrupted by another past action.<br>一個正在進行的動作被另一個過去的動作打斷。</li>
+                <li>Two actions happening simultaneously in the past.<br>過去同時發生的兩個動作。</li>
+                <li>Background information in a story.<br>故事中的背景資訊。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Art History (藝術史):</strong> While Van Gogh <strong>was painting</strong> 'Starry Night', he <strong>was living</strong> in an asylum.<br>當梵谷<strong>正在畫</strong>《星夜》時，他<strong>正住在</strong>精神病院裡。</p>
+                <p><strong>Daily Life (日常生活):</strong> I <strong>was watching</strong> TV when the phone rang.<br>電話響的時候我<strong>正在看</strong>電視。</p>
+                <p><strong>Music (音樂):</strong> The band <strong>was playing</strong> their most popular song while the crowd <strong>was singing</strong> along.<br>樂團<strong>正在演奏</strong>他們最受歡迎的歌曲，而觀眾們則<strong>跟著唱</strong>。</p>
+            </div>
+
+            <h3>Future Progressive | 未來進行式</h3>
+            <p><strong>Form:</strong> will be + verb-ing<br><strong>結構：</strong> will be + 現在分詞</p>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>An action that will be in progress at a specific time in the future.<br>在未來特定時間點將會正在進行的動作。</li>
+                <li>To ask politely about future plans.<br>禮貌地詢問未來的計畫。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Urban Planning (都市計畫):</strong> This time next year, they <strong>will be constructing</strong> the new city park.<br>明年這個時候，他們將<strong>正在建造</strong>新的城市公園。</p>
+                <p><strong>Travel (旅行):</strong> Tomorrow morning, we <strong>will be flying</strong> to a trendy new holiday destination.<br>明天早上，我們將<strong>飛往</strong>一個時髦的新度假勝地。</p>
+                <p><strong>Polite Inquiry (禮貌詢問):</strong> <strong>Will</strong> you <strong>be attending</strong> the fashion show next week?<br>下週你<strong>會參加</strong>那場時裝秀嗎？</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Test Your Knowledge: Progressive Tense | 測試你的知識：進行式</h3>
+                <div class="question">
+                    <p>1. Look! The barista ______ (make) a beautiful latte art.<br>看！咖啡師 ______ (製作) 一個漂亮的拉花。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1_prog" value="correct"> is making (正在製作 - 現在進行式)</label>
+                        <label><input type="radio" name="q1_prog" value="incorrect"> was making (當時正在製作 - 過去進行式)</label>
+                        <label><input type="radio" name="q1_prog" value="incorrect"> will be making (將正在製作 - 未來進行式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>2. While I ______ (browse) the art gallery, I bumped into an old friend.<br>當我 ______ (瀏覽) 藝廊時，我遇到了一位老朋友。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2_prog" value="incorrect"> am browsing (正在瀏覽 - 現在進行式)</label>
+                        <label><input type="radio" name="q2_prog" value="correct"> was browsing (當時正在瀏覽 - 過去進行式)</label>
+                        <label><input type="radio" name="q2_prog" value="incorrect"> will be browsing (將正在瀏覽 - 未來進行式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>3. Don't call me at 8 PM tonight. I ______ (have) dinner with my family.<br>今晚八點不要打給我。我 ______ (和家人) 吃晚餐。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3_prog" value="incorrect"> am having (正在吃 - 現在進行式)</label>
+                        <label><input type="radio" name="q3_prog" value="incorrect"> was having (當時正在吃 - 過去進行式)</label>
+                        <label><input type="radio" name="q3_prog" value="correct"> will be having (將正在吃 - 未來進行式)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <button class="submit-quiz-btn">Check Answers | 檢查答案</button>
+            </div>
+        </section>
+
+        <section id="past-participle" class="tab-content">
+            <h2>Past Participle | 過去分詞</h2>
+            <p>The past participle is a form of a verb that is used in several ways, including forming perfect tenses and the passive voice, and as an adjective. It typically ends in -ed for regular verbs, but irregular verbs have various forms (e.g., seen, written, broken).<br>過去分詞是動詞的一種形式，有多種用途，包括構成完成式和被動語態，以及作形容詞使用。規則動詞的過去分詞通常以 -ed 結尾，但不規則動詞則有各種不同形式 (例如：seen, written, broken)。</p>
+
+            <h3>Formation | 構成</h3>
+            <ul>
+                <li><strong>Regular Verbs:</strong> Add -ed to the base form (e.g., walk -> walked, paint -> painted, design -> designed).<br><strong>規則動詞：</strong>在動詞原形後加上 -ed (例如：walk -> walked, paint -> painted, design -> designed)。</li>
+                <li><strong>Irregular Verbs:</strong> These have unique forms that must be memorized (e.g., go -> gone, eat -> eaten, take -> taken).<br><strong>不規則動詞：</strong>這些動詞有其獨特的形式，必須記住 (例如：go -> gone, eat -> eaten, take -> taken)。</li>
+            </ul>
+
+            <h3>Uses of Past Participles | 過去分詞的用途</h3>
+            <p><strong>1. Perfect Tenses:</strong> Used with "have/has/had" to form present perfect, past perfect, and future perfect tenses.<br><strong>1. 完成式：</strong>與 "have/has/had" 連用，構成現在完成式、過去完成式和未來完成式。</p>
+            <div class="example">
+                <p><strong>Cuisine (烹飪):</strong> The chef has <strong>prepared</strong> a special dish for the evening, using locally <strong>sourced</strong> ingredients.<br>廚師用當地<strong>採購的</strong>食材為今晚<strong>準備了</strong>一道特別的菜餚。</p>
+                <p><strong>Technology (科技):</strong> They had <strong>developed</strong> the app before the competitors launched theirs.<br>他們在競爭對手推出他們的應用程式之前就已經<strong>開發好了</strong>這個應用程式。</p>
+            </div>
+
+            <p><strong>2. Passive Voice:</strong> Used with a form of "to be" to create the passive voice, where the subject receives the action.<br><strong>2. 被動語態：</strong>與 "to be" 的某種形式連用，構成被動語態，此時主詞接受動作。</p>
+            <div class="example">
+                <p><strong>Architecture (建築):</strong> The iconic café was <strong>designed</strong> by a famous architect in the 1920s.<br>這家標誌性的咖啡館是由一位著名建築師於1920年代<strong>設計的</strong>。</p>
+                <p><strong>News (新聞):</strong> The new fashion line will be <strong>featured</strong> in next month's magazine.<br>新的時裝系列將在下個月的雜誌中被<strong>專題報導</strong>。</p>
+            </div>
+
+            <p><strong>3. As Adjectives:</strong> Past participles can function as adjectives, describing nouns.<br><strong>3. 作為形容詞：</strong>過去分詞可以作形容詞用，修飾名詞。</p>
+            <div class="example">
+                <p><strong>Product Design (產品設計):</strong> The customer was delighted with the <strong>customized</strong> coffee machine.<br>顧客對這台<strong>客製化的</strong>咖啡機非常滿意。</p>
+                <p><strong>Art (藝術):</strong> The gallery displayed several <strong>hand-painted</strong> ceramics.<br>畫廊展出了幾件<strong>手繪的</strong>陶瓷品。</p>
+                <p><strong>Emotion (情感):</strong> She felt <strong>exhausted</strong> after a long day of meetings.<br>開了一整天的會後，她感到<strong>筋疲力盡</strong>。</p>
+                <p><strong>State (狀態):</strong> The <strong>broken</strong> cup lay on the floor.<br><strong>破碎的</strong>杯子躺在地板上。</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Identify the Past Participle | 辨識過去分詞</h3>
+                <div class="question">
+                    <p>1. "The report, <strong>written</strong> by the intern, was very insightful." What is the past participle used as an adjective?<br>「由實習生<strong>撰寫的</strong>報告非常有見地。」句中作為形容詞的過去分詞是什麼？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1_pp" value="incorrect"> report (報告)</label>
+                        <label><input type="radio" name="q1_pp" value="correct"> written (撰寫的)</label>
+                        <label><input type="radio" name="q1_pp" value="incorrect"> insightful (有見地的)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>2. "The old café, <strong>beloved</strong> by locals, serves the best espresso." Choose the past participle adjective.<br>「深受當地人<strong>喜愛的</strong>那家老咖啡館，供應最棒的濃縮咖啡。」選出作為形容詞的過去分詞。</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2_pp" value="incorrect"> serves (供應)</label>
+                        <label><input type="radio" name="q2_pp" value="incorrect"> locals (當地人)</label>
+                        <label><input type="radio" name="q2_pp" value="correct"> beloved (喜愛的)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>3. The verb "speak". What is its past participle form?<br>動詞 "speak" 的過去分詞形式是什麼？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3_pp" value="incorrect"> speaked</label>
+                        <label><input type="radio" name="q3_pp" value="correct"> spoken</label>
+                        <label><input type="radio" name="q3_pp" value="incorrect"> spoke</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                 <div class="question">
+                    <p>4. "All the cakes have been <strong>eaten</strong>!" In what construction is "eaten" used here?<br>「所有的蛋糕都被<strong>吃光了</strong>！」此處 "eaten" 用於何種結構？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4_pp" value="incorrect"> Perfect Tense (完成式)</label>
+                        <label><input type="radio" name="q4_pp" value="correct"> Passive Voice (with perfect tense) (被動語態 - 含完成式)</label>
+                        <label><input type="radio" name="q4_pp" value="incorrect"> Adjective (形容詞)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <button class="submit-quiz-btn">Check Answers | 檢查答案</button>
+            </div>
+        </section>
+
+        <section id="participle-clauses" class="tab-content">
+            <h2>Participle Clauses | 分詞構句</h2>
+            <p>Participle clauses are a way to give more information about a noun or to combine sentences more concisely. They use either the present participle (verb-ing) or the past participle (verb-ed/irregular form).<br>分詞構句是一種提供關於名詞更多資訊或更簡潔地合併句子的方式。它們使用現在分詞 (verb-ing) 或過去分詞 (verb-ed/不規則形式)。</p>
+            <p>They often replace a longer clause (e.g., a relative clause or a clause of time, reason, or condition) and make the writing style more elegant and efficient, similar to a well-tailored outfit.<br>它們通常取代較長的子句 (例如關係子句或時間、原因、條件子句)，使寫作風格更優雅有效率，就像一套量身訂製的服裝。</p>
+
+            <h3>Present Participle Clauses (-ing) | 現在分詞構句 (-ing)</h3>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>To describe an action happening at the same time as the action in the main clause. (Replaces "while" or "as")<br>描述與主要子句中動作同時發生的動作 (取代 "while" 或 "as")。</li>
+                <li>To give the reason for the action in the main clause. (Replaces "because" or "since")<br>說明主要子句中動作的原因 (取代 "because" 或 "since")。</li>
+                <li>To add more information about the subject of the main clause (similar to a non-defining relative clause).<br>提供關於主要子句主詞的更多資訊 (類似非限定關係子句)。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Simultaneous Action (Fashion 時尚):</strong> <strong>Sipping her espresso</strong>, the designer sketched her next collection. (While she was sipping her espresso...)<br>設計師<strong>一面喝著她的濃縮咖啡</strong>，一面勾勒她下一個系列的草圖。(當她喝著濃縮咖啡時…)</p>
+                <p><strong>Reason (Business 商業):</strong> <strong>Knowing the market was saturated</strong>, the company decided to innovate. (Because they knew the market was saturated...)<br><strong>由於知道市場已經飽和</strong>，該公司決定創新。(因為他們知道市場已經飽和…)</p>
+                <p><strong>Additional Information (Travel 旅行):</strong> The train, <strong>arriving at platform 3</strong>, is the express service to Milan. (The train, which is arriving at platform 3...)<br>火車，<strong>即將抵達三號月台</strong>，是開往米蘭的特快車。(火車，它即將抵達三號月台…)</p>
+                <p><strong>Result (Technology 科技):</strong> The update fixed several bugs, <strong>improving the app's performance</strong>. (The update fixed several bugs, and as a result, it improved...)<br>這次更新修正了幾個錯誤，<strong>從而提升了應用程式的效能</strong>。(這次更新修正了幾個錯誤，結果提升了…)</p>
+            </div>
+
+            <h3>Past Participle Clauses (-ed or irregular) | 過去分詞構句 (-ed 或不規則形式)</h3>
+            <p><strong>Use:</strong><br><strong>用途：</strong></p>
+            <ul>
+                <li>Often have a passive meaning.<br>通常帶有被動含義。</li>
+                <li>To give the reason for an action (passive).<br>說明某個動作的原因 (被動)。</li>
+                <li>To add information about the subject (passive, similar to a non-defining relative clause).<br>提供關於主詞的更多資訊 (被動，類似非限定關係子句)。</li>
+                <li>After conjunctions like "when", "once", "if", "unless", "though".<br>用於 "when", "once", "if", "unless", "though" 等連接詞之後。</li>
+            </ul>
+            <div class="example">
+                <p><strong>Passive Meaning (Art 藝術):</strong> <strong>Designed in a minimalist style</strong>, the café attracted many artists. (The café, which was designed in a minimalist style...)<br>這間咖啡館<strong>以極簡風格設計</strong>，吸引了許多藝術家。(這間咖啡館，它是以極簡風格設計的…)</p>
+                <p><strong>Reason (Food & Beverage 餐飲):</strong> <strong>Impressed by the aroma of freshly ground coffee</strong>, he decided to enter the shop. (Because he was impressed...)<br><strong>由於被現磨咖啡的香氣所吸引</strong>，他決定走進店裡。(因為他被…吸引)</p>
+                <p><strong>After Conjunction (Literature 文學):</strong> Once <strong>published</strong>, the novel became an instant bestseller. (Once it was published...)<br>小說一旦<strong>出版</strong>，便立即成為暢銷書。(一旦它被出版…)</p>
+                <p><strong>Condition (Manufacturing 製造業):</strong> Unless <strong>handled with care</strong>, the delicate porcelain will break. (Unless it is handled with care...)<br>除非<strong>小心處理</strong>，否則精緻的瓷器會破損。(除非它被小心處理…)</p>
+            </div>
+            
+            <h3>Perfect Participle Clauses (having + past participle) | 完成分詞構句 (having + 過去分詞)</h3>
+            <p><strong>Use:</strong> To show that one action was completed before another action started. It emphasizes the sequence.<br><strong>用途：</strong>表示一個動作在另一個動作開始之前已經完成。它強調順序。</p>
+             <div class="example">
+                <p><strong>Career (職涯):</strong> <strong>Having finished her degree</strong>, she started looking for a job in fashion. (After she had finished her degree...)<br><strong>完成學位後</strong>，她開始尋找時尚產業的工作。(在她完成學位後…)</p>
+                <p><strong>Finance (金融):</strong> <strong>Having secured the investment</strong>, the startup began its expansion phase. (After they had secured the investment...)<br><strong>獲得投資後</strong>，這家新創公司開始了擴張階段。(在他們獲得投資後…)</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Master Participle Clauses | 掌握分詞構句</h3>
+                <div class="question">
+                    <p>1. Combine using a present participle clause: "The chef smiled. He presented the beautifully arranged dish."<br>使用現在分詞構句合併句子：「廚師微笑了。他端上了擺盤精美的菜餚。」</p>
+                    <button class="show-answer-btn">Show Answer | 顯示答案</button>
+                    <div class="answer">
+                        <p><strong>Smiling,</strong> the chef presented the beautifully arranged dish. OR The chef, <strong>smiling,</strong> presented the beautifully arranged dish.<br><strong>微笑著，</strong>廚師端上了擺盤精美的菜餚。或 廚師，<strong>微笑著，</strong>端上了擺盤精美的菜餚。</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. Which sentence correctly uses a past participle clause?<br>哪個句子正確使用了過去分詞構句？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1_partclause" value="incorrect"> Wrote quickly, the letter had many mistakes. (寫得很快，這封信有很多錯誤。- 形式錯誤)</label>
+                        <label><input type="radio" name="q1_partclause" value="correct"> Written quickly, the letter had many mistakes. (由於寫得很快，這封信有很多錯誤。)</label>
+                        <label><input type="radio" name="q1_partclause" value="incorrect"> Writing quickly, the letter had many mistakes. (正在快速地寫，這封信有很多錯誤。- 語意可能不同)</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>3. "______ the new coffee blend, the customers were very satisfied." (Use a perfect participle of 'taste')<br>「______ 新的咖啡配方後，顧客們非常滿意。」(使用 'taste' 的完成分詞)</p>
+                    <button class="show-answer-btn">Show Answer | 顯示答案</button>
+                    <div class="answer">
+                        <p><strong>Having tasted</strong> the new coffee blend, the customers were very satisfied.<br><strong>品嚐過</strong>新的咖啡配方後，顧客們非常滿意。</p>
+                    </div>
+                </div>
+                 <div class="question">
+                    <p>4. "The girl ______ by the window is reading a fashion magazine." (Fill in with a present participle of 'sit')<br>「那個 ______ 窗邊的女孩正在閱讀一本時尚雜誌。」(用 'sit' 的現在分詞填空)</p>
+                    <button class="show-answer-btn">Show Answer | 顯示答案</button>
+                    <div class="answer">
+                        <p>The girl <strong>sitting</strong> by the window is reading a fashion magazine.<br>那個<strong>坐在</strong>窗邊的女孩正在閱讀一本時尚雜誌。</p>
+                    </div>
+                </div>
+                <button class="submit-quiz-btn">Check Radio Answers | 檢查選擇題答案</button> 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grammar Learning Studio | 文法學習工作室</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

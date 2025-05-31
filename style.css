@@ -1,0 +1,195 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #F5F5DC; /* Beige - a muted base color */
+    color: #4A3B31; /* Dark brown for text - coffee bean color */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #A07855; /* Muted coffee brown */
+    color: #FFF8E7; /* Creamy white for header text */
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300; /* Lighter font for a more 'fashion' feel */
+}
+
+.tab-nav {
+    background-color: #D4B483; /* Lighter coffee brown for tabs */
+    overflow: hidden;
+    border-bottom: 2px solid #A07855; /* Separator line */
+    text-align: center; /* Center the tab buttons */
+}
+
+.tab-nav button {
+    background-color: inherit;
+    float: none; /* Remove float for centering */
+    display: inline-block; /* Allow centering */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 1.1em;
+    color: #4A3B31; /* Dark brown for tab text */
+    border-bottom: 3px solid transparent; /* For active tab underline */
+}
+
+.tab-nav button:hover {
+    background-color: #C19A6B; /* Slightly darker on hover */
+    color: #FFF8E7;
+}
+
+.tab-nav button.active {
+    background-color: #A07855; /* Active tab matches header */
+    color: #FFF8E7;
+    border-bottom: 3px solid #FFF8E7; /* White underline for active tab */
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto; /* Center the main content */
+    background-color: #FFF8E7; /* Creamy white for content background */
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    animation: fadeIn 0.5s; /* Simple fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h2 {
+    color: #A07855; /* Muted coffee brown for section titles */
+    border-bottom: 2px solid #D4B483;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+p, li {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.example {
+    background-color: #EADDCA; /* Lighter beige for examples */
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #A07855; /* Coffee brown accent */
+    border-radius: 4px;
+}
+
+.example strong {
+    color: #704214; /* Darker coffee for emphasis */
+}
+
+.quiz-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #F0E6D1; /* Slightly different beige for quiz */
+    border-radius: 6px;
+}
+
+.quiz-container h3 {
+    color: #A07855;
+    margin-top: 0;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.question p {
+    margin-bottom: 8px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background-color: #FFF8E7;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.options label:hover {
+    background-color: #EADDCA;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #A07855; /* Radio button color */
+}
+
+.feedback {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.feedback.correct {
+    background-color: #D7EADC; /* Muted green for correct */
+    color: #3A6B4A;
+    border-left: 4px solid #5CB85C;
+}
+
+.feedback.incorrect {
+    background-color: #F8D7DA; /* Muted red for incorrect */
+    color: #721C24;
+    border-left: 4px solid #D9534F;
+}
+
+.show-answer-btn, .submit-quiz-btn {
+    background-color: #A07855;
+    color: #FFF8E7;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.show-answer-btn:hover, .submit-quiz-btn:hover {
+    background-color: #8E6549; /* Darker coffee on hover */
+}
+
+.answer {
+    background-color: #EADDCA;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px dashed #A07855;
+    display: none; /* Initially hidden */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A3B31; /* Dark brown for footer */
+    color: #D4B483; /* Lighter coffee for footer text */
+    font-size: 0.9em;
+} 
